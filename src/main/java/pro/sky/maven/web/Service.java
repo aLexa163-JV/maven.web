@@ -9,8 +9,7 @@ public class Service {
         return "<b>Добро пожаловать в калькулятор</b>";
     }
 
-    public String plus(@RequestParam(value = "num1", required = false) Integer num1,
-                       @RequestParam(value = "num2", required = false) Integer num2) {
+    public String plus(Integer num1, Integer num2) {
         if (num1 == null || num2 == null) {
             return "<b>Введите значение!</b>";
         }
@@ -18,8 +17,7 @@ public class Service {
         return num1 + " + " + num2 + " = " + num3;
     }
 
-    public String minus(@RequestParam(value = "num1", required = false) Integer num1,
-                        @RequestParam(value = "num2", required = false) Integer num2) {
+    public String minus(Integer num1, Integer num2) {
         if (num1 == null || num2 == null) {
             return "<b>Введите значение!</b>";
         }
@@ -27,8 +25,7 @@ public class Service {
         return num1 + " - " + num2 + " = " + num3;
     }
 
-    public String multiply(@RequestParam(value = "num1", required = false) Integer num1,
-                           @RequestParam(value = "num2", required = false) Integer num2) {
+    public String multiply(Integer num1, Integer num2) {
         if (num1 == null || num2 == null) {
             return "<b>Введите значение!</b>";
         }
@@ -36,8 +33,7 @@ public class Service {
         return num1 + " * " + num2 + " = " + num3;
     }
 
-    public String divide(@RequestParam(value = "num1", required = false) Double num1,
-                         @RequestParam(value = "num2", required = false) Double num2) {
+    public String divide(Double num1, Double num2) {
         if (num1 == null || num2 == null) {
             return "<b>Введите значение!</b>";
         }
